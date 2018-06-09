@@ -1,0 +1,81 @@
+body, html{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'handlee', 'Courier New', Courier, monospace;
+    background: #dedccf;
+}
+
+.header{
+    text-align: center;
+}
+
+.main-app{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add-box, .list-box, .details-box{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.add-box{
+    height: 100%;
+}
+input, label, button, textarea{
+    display: block;
+    width: 97%;
+    margin-top: 5px;
+    font-size: 1em;
+    font-family: 'handlee', 'Courier New', Courier, monospace;
+}
+input, button{
+    height: 30px;
+}
+button{
+    width: 70%;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #bbb;
+    color: #000;
+}
+.bttn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.list-box{
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+.card{
+    background-color: #fff;
+    color: #000;
+    margin-top: 10px;
+    padding: 10px;
+}
+.card-content h4{
+    margin: 12px;
+}
+.details-box{
+width: 25%;
+height: 100%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .main-app{
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .add-box, .list-box, .details-box{
+        margin-top: 20px;
+        width: 100%;
+    }
+  }
